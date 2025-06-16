@@ -1,23 +1,27 @@
 <div align="center">
 
-# 🌡️ Temperature Prediction from Humidity
+# 🔬 Data Science Internship Projects
 
-**A Data Science Internship Project**  
+**Real-world Applications of Machine Learning & Forecasting**  
 🔗 _by [Skillfied Mentors]_ • 🧠 _Intern: Aryan Jha_
 
 </div>
 
 ---
 
-## 📌 Overview
+## 📦 Project Repository Overview
 
-This project aims to **predict temperature from humidity** using a simple linear regression model. It's part of a hands-on data science internship task and serves as an introduction to supervised learning, exploratory data analysis, and evaluation.
+This repository contains projects completed during a data science internship focused on applying ML techniques to real-world business problems. Each task explores a different domain and builds skills in EDA, regression, time series, and modeling.
 
 ---
 
-## 📁 Dataset Description
+## ✅ Completed Projects
 
-The dataset (`humidity.csv`) contains sensor readings with the following features:
+### 1️⃣ 🌡️ Temperature Prediction from Humidity
+
+A regression-based project where a simple linear model is used to predict **temperature** based on **humidity**.
+
+#### 📁 Dataset Description: `humidity.csv`
 
 | Column       | Description                         |
 |--------------|-------------------------------------|
@@ -27,30 +31,70 @@ The dataset (`humidity.csv`) contains sensor readings with the following feature
 | `lat`, `lon` | Sensor location coordinates         |
 | `pressure`   | Atmospheric pressure (optional)     |
 
-> ✅ **Only `humidity` and `temperature` are used for modeling.**
+> ✅ Only `humidity` and `temperature` are used for modeling.
+
+#### 🔍 Workflow:
+
+- Load & clean the data  
+- Drop missing values  
+- Summary stats & correlation  
+- Scatter plot (humidity vs temp)  
+- Linear regression model  
+- Evaluation & visualization  
+- 🔚 Conclusion and next steps
 
 ---
 
-## 🔍 Project Workflow
+### 2️⃣ 📈 Quantity Forecasting using Time Series Analysis
 
-- ✅ Load and inspect the dataset  
-- ✅ Drop missing values  
-- ✅ Summary statistics and correlation matrix  
-- ✅ Scatter plot: Humidity vs Temperature  
-- ✅ Linear Regression Model  
-- ✅ Prediction and evaluation  
-- ✅ Actual vs Predicted visualization  
+A time-series forecasting task using **ARIMA modeling** to predict quantity sold over time from transactional order data.
+
+#### 📁 Dataset: `Raw Data_Predictive Analysis.xlsx`
+
+| Column Name          | Description                     |
+|----------------------|---------------------------------|
+| `OrderDate`          | Date of the order               |
+| `total_qty_sales`    | Total quantity sold             |
+| `ParentProductNew`   | Product name                    |
+| `ProductCategoryNew` | Category                        |
+| `productListViews`   | Product views (optional)        |
+| `productListClicks`  | Product clicks (optional)       |
+
+#### 🔍 Workflow:
+
+- Load and inspect timestamped data  
+- Resample daily to weekly  
+- Visualize sales trends  
+- Time series decomposition  
+- Train/test split  
+- ARIMA model fitting  
+- Forecasting + Evaluation  
+- 📉 Actual vs Predicted plot  
 
 ---
 
-## 📊 Exploratory Data Analysis
+## 🕒 Upcoming
 
-```python
-# Summary statistics
-df.describe()
+✅ **2 out of 3** internship tasks completed.  
+🔜 Final task will be added next week. Stay tuned for more advanced modeling and evaluation.
 
-# Correlation matrix
-df.corr()
+---
 
-# Scatter plot
-sns.scatterplot(data=df, x='humidity', y='temperature')
+## 👨‍💻 Author
+
+**Aryan Jha**  
+_BTech | Data Science Intern | ML Enthusiast_  
+[🔗 Portfolio Website](https://aryannn2412.github.io)
+
+---
+
+## ⭐️ Show Your Support
+
+If this repo helped you, feel free to:
+
+- ⭐ Star it
+- 🍴 Fork it
+- 👀 Share it
+
+---
+
