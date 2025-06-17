@@ -2,7 +2,7 @@
 
 # 🔬 Data Science Internship Projects
 
-**Real-world Applications of Machine Learning & Forecasting**  
+**Real-world Applications of Machine Learning, Forecasting & Anomaly Detection**  
 🔗 _by [Skillfied Mentors]_ • 🧠 _Intern: Aryan Jha_
 
 </div>
@@ -11,17 +11,20 @@
 
 ## 📦 Project Repository Overview
 
-This repository contains projects completed during a data science internship focused on applying ML techniques to real-world business problems. Each task explores a different domain and builds skills in EDA, regression, time series, and modeling.
+This repository contains a collection of 3 mini-projects completed as part of a hands-on data science internship.  
+Each task showcases a different branch of data science — including **regression**, **time series forecasting**, and **fraud detection using classification**.
 
 ---
 
 ## ✅ Completed Projects
 
+---
+
 ### 1️⃣ 🌡️ Temperature Prediction from Humidity
 
 A regression-based project where a simple linear model is used to predict **temperature** based on **humidity**.
 
-#### 📁 Dataset Description: `humidity.csv`
+#### 📁 Dataset: `humidity.csv`
 
 | Column       | Description                         |
 |--------------|-------------------------------------|
@@ -31,8 +34,6 @@ A regression-based project where a simple linear model is used to predict **temp
 | `lat`, `lon` | Sensor location coordinates         |
 | `pressure`   | Atmospheric pressure (optional)     |
 
-> ✅ Only `humidity` and `temperature` are used for modeling.
-
 #### 🔍 Workflow:
 
 - Load & clean the data  
@@ -41,7 +42,7 @@ A regression-based project where a simple linear model is used to predict **temp
 - Scatter plot (humidity vs temp)  
 - Linear regression model  
 - Evaluation & visualization  
-- 🔚 Conclusion and next steps
+- ✅ Conclusion: Consider polynomial regression for more complex patterns
 
 ---
 
@@ -69,14 +70,39 @@ A time-series forecasting task using **ARIMA modeling** to predict quantity sold
 - Train/test split  
 - ARIMA model fitting  
 - Forecasting + Evaluation  
-- 📉 Actual vs Predicted plot  
+- ✅ Conclusion: Consider SARIMA, Prophet, or LSTM for complex seasonality
 
 ---
 
-## 🕒 Upcoming
+### 3️⃣ 💳 Credit Card Fraud Detection (Binary Classification)
 
-✅ **2 out of 3** internship tasks completed.  
-🔜 Final task will be added next week. Stay tuned for more advanced modeling and evaluation.
+A classification project that applies **logistic regression** to detect fraudulent transactions from anonymized credit card data.
+
+#### 📁 Dataset: `creditcard.csv`
+
+| Column       | Description                           |
+|--------------|---------------------------------------|
+| `V1` - `V28` | PCA-transformed features (anonymized) |
+| `Time`       | Seconds elapsed between transactions  |
+| `Amount`     | Transaction amount                    |
+| `Class`      | Target (1 = fraud, 0 = normal)        |
+
+#### 🔍 Workflow:
+
+- Feature scaling for `Time` and `Amount`  
+- Checked class distribution and handled imbalance via stratified split  
+- Trained a logistic regression model  
+- Evaluated using confusion matrix, precision, recall  
+- ✅ Conclusion: Accuracy is misleading due to imbalance.  
+  ➕ Future: Try SMOTE, Random Forest, XGBoost, or Deep Learning
+
+---
+
+## 🕒 Internship Status
+
+✅ **All 3 internship tasks successfully completed.**  
+🧠 Projects span **regression, forecasting, and classification.**  
+📈 Next: Continue exploring advanced modeling and deployment (e.g., Streamlit dashboards or model APIs).
 
 ---
 
@@ -92,8 +118,8 @@ _BTech | Data Science Intern | ML Enthusiast_
 
 If this repo helped you, feel free to:
 
-- ⭐ Star it
-- 🍴 Fork it
+- ⭐ Star it  
+- 🍴 Fork it  
 - 👀 Share it
 
 ---
